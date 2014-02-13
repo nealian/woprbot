@@ -1,1 +1,1 @@
-["redis-brain.coffee", "shipit.coffee"]
+["redis-brain.coffee", "reload.coffee", "alot.coffee", "ambush.coffee", "bitly.coffee", "cat.coffee"]
