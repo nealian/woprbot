@@ -1,0 +1,10 @@
+#!/bin/bash
+
+HUBOT_IRC_SERVER="irc.nmt.edu"
+HUBOT_IRC_ROOMS="#wopr"
+HUBOT_IRC_NICK="woprbot"
+HUBOT_IRC_USESSL="true"
+HUBOT_IRC_PORT="6697"
+HUBOT_AUTH_ADMIN="wopr"
+
+bin/hubot -a irc --name woprbot

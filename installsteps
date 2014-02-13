@@ -1,0 +1,5 @@
+# After node and npm are installed
+npm install -g hubot coffeescript
+hubot --create hubotname
+cd hubotname
+npm install hubot-irc --save && npm install
