@@ -1,0 +1,11 @@
+messagething = "This\n
+is\n
+my\n
+multiline\n
+message\n
+thing."
+
+module.exports = (robot) ->
+  robot.respond /thing/, (msg) ->
+    user = msg.message.user.name
+    robot.send({user: {name: user}}, hmm) for hmm in messagething.split(/\n/)

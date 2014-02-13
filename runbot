@@ -9,7 +9,7 @@ export HUBOT_IRC_SERVER_FAKE_SSL="true"
 
 export HUBOT_AUTH_ADMIN="wopr"
 
-export HUBOT_CAT_PORT="6325"
+export HUBOT_CAT_PORT=6325
 
 redis-server &
 
