@@ -1,5 +1,12 @@
 #!/bin/bash
 
+## Script options
+HUBOT_HOME=`pwd`
+HUBOT_NAME="woprbot"
+COMMAND="${HUBOT_HOME}/bin/hubot"
+COMMAND_OPTIONS="-a irc --name ${HUBOT_NAME}"
+
+## Hubot options
 export HUBOT_IRC_SERVER="irc.nmt.edu"
 export HUBOT_IRC_ROOMS="#wopr"
 export HUBOT_IRC_NICK="woprbot"
@@ -13,6 +20,6 @@ export HUBOT_CAT_PORT=6325
 
 redis-server &
 
-bin/hubot -a irc --name woprbot
+$COMMAND $COMMAND_OPTIONS
 
 redis-cli shutdown
